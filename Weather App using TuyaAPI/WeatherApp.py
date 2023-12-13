@@ -7,8 +7,8 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, font
 
 
 
-ACCESS_ID = "4sm4v5fyb6fkekonk8qi"
-ACCESS_KEY = "c312c8724dd340d1ab3fb275cf8040fa"
+ACCESS_ID = "qsyc7mj8wmtcxvsxdcmm"
+ACCESS_KEY = "3e81cdd8e86943eaa83f4b76db094d0f"
 API_ENDPOINT = "https://openapi.tuyain.com"
 MQ_ENDPOINT = "wss://mqe.tuyain.com:8285/"
 
@@ -34,8 +34,8 @@ window.configure(bg = "#3eedd6")
 
 window.title('Tuya Weather App')
 
-photo = PhotoImage(file = "C:\\Users\\jaya\\Downloads\\tuya logo.png")
-window.iconphoto(False, photo)
+# photo = PhotoImage(file = "logo.png")
+# window.iconphoto(False, photo)
 
 hour = int(datetime.datetime.now().hour)
 

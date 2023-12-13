@@ -4,7 +4,8 @@ import requests as HTTP
 
 # Main Function for scraping
 def main(emotion):
-
+	headers = {
+		'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
 	# IMDb Url for Drama genre of
 	# movie against emotion Sad
 	if(emotion == "Sad"):
@@ -46,7 +47,7 @@ def main(emotion):
 		urlhere = 'http://www.imdb.com/search/title?genres=film_noir&title_type=feature&sort=moviemeter, asc'
     
  #HTTP request to get the data of the whole page
-	response = HTTP.get(urlhere)
+	response = HTTP.get(urlhere, headers=headers)
 	data = response.text
 
 	# Parsing the data using
