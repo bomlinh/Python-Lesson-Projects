@@ -30,12 +30,12 @@ humidity = (weather['result']['current_weather']['humidity'])
 
 window = Tk()
 window.state('zoomed')
-window.configure(bg = "#3eedd6")
+window.configure(bg = "#ff7f02")
 
-window.title('Tuya Weather App')
+window.title('Rudemy Weather App')
 
-# photo = PhotoImage(file = "logo.png")
-# window.iconphoto(False, photo)
+photo = PhotoImage(file = "logo.png")
+window.iconphoto(True, photo)
 
 hour = int(datetime.datetime.now().hour)
 
@@ -75,7 +75,7 @@ elif current_weather_condition == 'Partly Cloudy':
 
 canvas = Canvas(
     window,
-    bg = "#3eedd6",
+    bg = "#ff7f02",
     height = 1024,
     width = 1440,
     bd = 0,
@@ -104,7 +104,7 @@ canvas.create_text(
 )
 
 canvas.create_text(
-    370.0,
+    300.0,
     354.0,
     anchor="nw",
     text="Current Weather Condition:  ",
@@ -149,7 +149,7 @@ canvas.create_text(
 )
 
 canvas.create_text(
-    307.0,
+    320.0,
     657.0,
     anchor="nw",
     text=wind_speed + "km/h",
@@ -158,7 +158,7 @@ canvas.create_text(
 )
 
 canvas.create_text(
-    323.0,
+    330.0,
     522.0,
     anchor="nw",
     text=temperature + "°",
